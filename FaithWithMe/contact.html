@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Faith&#10014;With&#9728;Me.org</title>
+  <link rel="stylesheet" href="About Us.css">
+</head>
+  <!-- Header Section -->
+  <header>
+    <h1 style="font-size: 70px;">Faith&#10014;With&#9728;Me</h1>
+    <nav>
+      <ul>
+        <li><a href="Index.html">Home</a></li>
+        <li><a href="About Us.html">About Us</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="get-involved">Get Involved</a></li>
+        <li><a href="#contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+<body style="background-color: rgb(224, 219, 219);">
+    
+
+    <br>
+
+<div class="container-float">
+    <img src="/Users/vhuhwavhonemanashi/Desktop/FaithWithMe/59915-aleksandr-ledogorov-310150-unsplash.1200w.tn.webp" alt="kids" class="image-float">
+
+   
+      <h1 style="text-align: center;color: gray;align-items: center;">Contact Us</h1>
+      <br>
+      <br>
+      <h4 style="text-decoration:underline;text-decoration: solid;align-items: center;">Our Address</h4>
+      <br>
+  
+<p> WeWork at the Link
+  <br>
+1F, 173 Oxford Road
+<br>
+Rosebank, South Africa
+<br>
+2196
+</p>
+<br>
+<br>
+<h4 style="text-decoration: underline;text-decoration: solid;align-items: center;">Contact Details</h4>
+<br>
+      <p>
+        General: info@trevornoahfoundation.org
+        <br>
+Publicity: jfritzo@jillfritzopr.com
+      </p>
+  </div>
+
+<br>
+<br>
+<div id="quote-container">
+  <p style="text-align: center;color: rgb(12, 31, 236);text-decoration: line-through;" id="quote">
+    <script>
+      // Array of quotes
+      const quotes = [
+        "The journey of a thousand miles begins with one step.",
+        "Believe you can and you're halfway there.",
+        "Act as if what you do makes a difference. It does.",
+        "Success is not final, failure is not fatal: It is the courage to continue that counts.",
+        "Keep going, everything you need will come to you at the perfect time.",
+    
+    // Add more quotes as needed
+    ];
+    
+      // Get the current day of the year
+      const today = new Date();
+      const dayOfYear = Math.floor(
+        (today - new Date(today.getFullYear(), 0, 0)) / (1000 * 60 * 60 * 24)
+      );
+    
+      // Select a quote based on the day of the year
+      const quoteOfTheDay = quotes[dayOfYear % quotes.length];
+    
+      // Display the quote in the HTML
+      document.getElementById("quote").textContent = quoteOfTheDay;
+    
+    </script>
+</div>
+<h2 style="text-align: center;color: gray;">Leave A Message</h2>
+
+<form action="submit_form.php" method="POST" id="contact-form" style="text-align: center;align-items: center;">
+  <label for="name">Name:</label>
+  <input type="text" id="name" name="name" size="60px">
+<br>
+  <label for="email">Email:</label>
+  <input type="email" id="email" name="email" size="60px" required>
+<br>
+  <label for="subject">Subject:</label>
+  <input type="text" id="subject" name="subject" size="60px" > 
+<br>
+  <label for="message">Message:</label>
+  <textarea id="message" name="message" rows="4" required></textarea>
+<br>
+  <button type="submit">Send Us A Message</button>
+</form>
+</p>
+
+  <!-- Footer -->
+  <footer style="text-align: center;">
+    <p>&copy; Faith&#10014;With&#9728;Me - All Rights Reserved</p>
+  </footer>
+<br>
+</body>
+</html>

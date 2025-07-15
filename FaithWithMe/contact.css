@@ -1,0 +1,79 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  /* Body Styling */
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+  }
+  
+  /* Header and Navigation */
+  header {
+    background-color: #8fd7d2;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+  }
+  
+  header h1 {
+    margin-bottom: 0.5rem;
+  }
+  
+  nav ul {
+    list-style-type: none;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin-right: 1rem;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+
+
+  /* Container Styling */
+.container-float {
+    overflow: hidden; /* Clears the float to prevent layout issues */
+    padding: 50px;
+    max-width: 1500px;
+    margin: auto;
+  }
+  
+  /* Image Styling */
+  .image-float {
+    float: right;
+    width: 600px; /* Set image width */
+    height: 600px;
+    margin-right: 20px; /* Space between image and text */
+  }
+  
+  /* Text Styling */
+  .container-float p {
+    font-size: 1em;
+    line-height: 1.5;
+  }
+  /* Contact Form Styling */
+form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label, input, textarea, button {
+    margin-bottom: 0.5rem;
+  }
+  
+  button {
+    background-color: #93c693;
+    color: white;
+    border: none;
+    padding: 0.5rem;
+  }
+  

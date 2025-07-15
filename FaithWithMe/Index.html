@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home Faith&#10014;With&#9728;Me.org</title>
+  <link rel="stylesheet" href="css.css">
+</head>
+  <!-- Header Section -->
+  <header>
+    <h1 style="font-size: 70px;">Faith&#10014;With&#9728;Me</h1>
+    <nav>
+        <ul>
+          <li><a href="#Index.html">Home</a></li>
+          <li><a href="About Us.html">About Us</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="get-involved">Get Involved</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+  </header>
+<body>
+
+  <img src="4429292b9599e5e0b41a6704f50b0c36.jpg" alt="cross image" width="2000px" height="1000px" />
+  <br>
+  <br>
+
+  <div id="quote-container">
+    <p style="text-align: center;color: rgb(12, 31, 236);text-decoration: line-through;" id="quote">
+  </div>
+  <script>
+    // Array of quotes
+    const quotes = [
+      "The journey of a thousand miles begins with one step.",
+      "Believe you can and you're halfway there.",
+      "Act as if what you do makes a difference. It does.",
+      "Success is not final, failure is not fatal: It is the courage to continue that counts.",
+      "Keep going, everything you need will come to you at the perfect time.",
+
+  // Add more quotes as needed
+];
+
+    // Get the current day of the year
+    const today = new Date();
+    const dayOfYear = Math.floor(
+      (today - new Date(today.getFullYear(), 0, 0)) / (1000 * 60 * 60 * 24)
+    );
+
+    // Select a quote based on the day of the year
+    const quoteOfTheDay = quotes[dayOfYear % quotes.length];
+
+    // Display the quote in the HTML
+    document.getElementById("quote").textContent = quoteOfTheDay;
+
+  </script>
+
+  </p>
+
+<br>
+<br>
+
+
+  <!-- Footer -->
+  <footer style="text-align: center;">
+    <p>&copy; Faith&#10014;With&#9728;Me - All Rights Reserved</p>
+  </footer>
+
+</body>
+
+</html>
